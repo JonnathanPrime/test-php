@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px auto;
+	position: relative;
+}
+header,
+footer{
+	background-color: #004282;
+	padding: 10px 0;
+	color: #fff;
+}
+main{
+  padding: 50px 0;
+  background-color: #E0E0E0;
+  color: #686868;
+}
+
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: uppercase;
+}
+.footer2{
+	margin: 50px 0;
+}
+.logo{
+	width: 130px;
+    height: auto;
+    border-radius: 15px 50px;
+}
+.ensemble{
+ display: flex;
+ justify-content: space-around;
+ margin-top: 50px;
+}
+.ensemble2{
+	display: flex;
+	flex-direction: column;
+	align-content: center;	
+}
+.button,
+.lecture {
+	display: flex;
+	justify-content: center;
+	width: 200px;
+	margin: 0 auto;
+	background-color: rgba(255, 87, 51, 0.9);
+	color: white;
+	padding: 15px 25px;
+	text-transform: uppercase;
+}
+.toggle,
+.envoyer,
+.enregistrer {
+	background-color: rgba(255, 87, 51, 0.9);
+	color: white;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	align-self: baseline;
+	margin: 10px auto;
+	text-align: center;
+}
+.toggle{
+	width: 250px;
+}
+form{
+	margin: 50px 0;
+	display: flex;
+	flex-direction: column;
+}
+form input{
+	margin: 15px;
+	width: 300px;
+	height: 40px;
+	font-size: 16px;
+}
+form textarea {
+	margin: 15px 0;
+	width: 500px;
+	height: 200px;
+	font-size: 16px;
+}
+label{
+	display: block;
+	margin: 15px 0;
+}
+h1{
+  color: #686868;
+  text-align: center;
+}
+#articles,
+#commentaires{
+	display: block;
+	text-align: center;
+	margin: 40px 0;
+	background-color: rgba(255, 255, 255, 1);
+	color: #686868;
+	padding: 40px
+}
+#articles li,
+#commentaires{
+	list-style-type: none;
+}
+.titre{
+	margin: 20px 0;
+	font-size: 26px;
+}
+.infos{
+	margin: 20px 0;
+	text-align: right;
+}
+.contenu{
+	margin: 20px 0;
+	text-align: justify;
+}
+.lecture{
+	margin-right: 20px;
+}
+
+#ajout input,
+#ajout textarea,
+.modifier input,
+.modifier textarea
+{
+	display: block;
+	margin: 10px auto;
+	color: #686868;
+}
+#ajout,
+.modifier{
+	text-align: center;
+}
+.modifier{
+	margin-top: -90px;
+	background-color: rgba(255, 255, 255, 1);
+}
+#ajout .envoyer{
+  color: #fff;
+}
+.modifier .enregistrer{
+	color: #fff;
+}
+.modifier{
+	display: none;
+}
+
+#commentaires{
+	list-style-type: none;
+	display: block;
+	text-align: justify;
+	margin: 20px 0;
+	background-color: rgba(255, 255, 255, 1);
+	color: #686868;
+	padding: 20px 40px;
+}
+.usercomment{
+	color: rgba(255, 87, 51, 0.9);
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.usercomment span{
+	color: #686868;
+}
+.usercomment a{
+	color: rgba(255, 87, 51, 0.9);
+}
+.contentcomment{
+	margin :20px 0;
+}
+.datecomment{
+
+}
+
+
+#addcomment{
+	text-align: center;
+	margin: 50px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#addcomment input{
+	margin: 10px;
+	width: 150px;
+	height: 25px;
+	font-size: 16px;
+}
+#addcomment textarea {
+	margin: 10px 0;
+	width: 50%;
+	height: 200px;
+	font-size: 16px;
+}
+#addcomment input,
+#addcomment textarea
+{
+	margin: 10px auto;
+	color: #686868;
+}
+
+#addcomment label{
+	display: block;
+}
+#addcomment .envoyer{
+	padding: 10px;
+	color: #fff;
+	height: auto;
+}
+.categorie {
+	text-align: left;
+}
+.categorie span{
+	color: rgba(255, 87, 51, 0.9);
+}
+.compteur{
+	text-align: left;
+}
+.compteur .fa{
+	margin-right: 6px;
+}

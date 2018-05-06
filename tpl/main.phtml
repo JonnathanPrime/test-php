@@ -1,0 +1,25 @@
+<div class="ensemble">
+<div class="ensemble2">
+	<h1>Articles récents</h1>
+	
+
+			<?php
+			foreach ($articles as $iK => $aValues) {
+              
+              $resume = substr($aValues['contenu'], 0, 300); // Réduit l'affichage de l'article
+   		?>
+			<ul id="articles">
+			<li class="compteur"><i class="fa fa-comment" aria-hidden="true"> </i><?=$aValues['nb_comments']; ?></li>
+			<li class="titre"><?=$aValues['titre']?></li>
+			<li class="infos">Membre : Zarathoustra - <?=$aValues['mydate']?></li>
+			<li class="contenu"><?=$resume?>...</li>
+			<li class="categorie">Catégorie : <span><?=$aValues['categorie']?></span></li>
+			<a href="?page=post&code=<?=$aValues['id_article']?>"><li class="lecture">Lire la suite</li></a>
+			</ul>
+			<?php 
+		}
+		?>
+
+</div>
+</div>
+<a href="?page=new" class="button">Créer votre article !</a>

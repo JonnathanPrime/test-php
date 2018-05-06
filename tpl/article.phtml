@@ -1,0 +1,37 @@
+<?php
+addComment();
+$onearticle = fullArticle();
+
+foreach ($onearticle as $iK => $aValues) {
+?>
+
+<ul id="articles">
+	<li class="titre"><?=$aValues['titre']?></li>
+	<li class="infos">Membre : Zarathoustra - <?=$aValues['mydate']?></li>
+	<li class="contenu"><?=$aValues['contenu']?></li>
+
+</ul>
+<?php
+}	
+
+$allComments = getListComment();
+
+foreach ($allComments as $iK => $aValues) {
+	?>
+		
+	<ul id="commentaires">
+		<li class="usercomment"><span>Le <?=$aValues['mydate'].' - Posté par </span><a href="">'.$aValues['pseudo']?></a></li>
+		<li class="contentcomment"><?=$aValues['comment']?></li>
+		<li><input type="hidden" name="idcache" value="<?=$aValues['id_article']?>"></li>
+	</ul>
+	<?php
+}	
+?>
+<h1>Participez et commentez cet article !</h1>
+<form id="addcomment" method="post" action="">
+	<label>Pseudo</label>
+	<input type="text" name="pseudo" required>
+	<label>Votre commentaire</label>
+	<textarea  type="text" name="comment"></textarea>
+	<input type="submit" value="envoyer" name="commenter" class="envoyer">
+</form>
